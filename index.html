@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="CustomApp">
+
+<head>
+    <title>Custom App</title>
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+    <script src="app.filters.js"></script>
+    <script src="app.controller.js"></script>
+    <script src="app.directives.js"></script>
+</head>
+
+<body ng-controller="AppCtrl">
+
+	<!-- <div print-this></div> -->
+	<print-this text="arvind"></print-this>
+	<!-- <div class="print-this"></div> -->
+
+	{{name | titlecase | checkmark}}
+	{{name | checkmark}}
+	{{names | checkmark}}
+	
+</body>
+
+</html>
